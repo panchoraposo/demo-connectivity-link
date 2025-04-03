@@ -4,9 +4,9 @@
 ## Installation
 Step 1: Ansible scripts for the deployment of connectivity link (Operators etc)
 
-cd operator-setup
-ansible-playbook playbooks/ocp4_workload_connectivity_link.yml  -e ACTION=create -i inventories/inventory.template
-
+    cd operator-setup
+    ansible-playbook playbooks/ocp4_workload_connectivity_link.yml -e ACTION=create -i inventories/inventory.template
+    
 Step 2: Demo setup
 
 cd ../demo-setup
