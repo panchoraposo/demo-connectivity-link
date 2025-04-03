@@ -9,10 +9,12 @@ Step 1: Ansible scripts for the deployment of connectivity link (Operators etc)
     
 Step 2: Demo setup
 
-cd ../demo-setup
-ansible-playbook playbooks/globex.yml -e ACTION=create -e "ocp4_workload_cloud_architecture_workshop_mobile_gateway_url=https://globex-mobile.globex.<ROUTE53_HOSTED_ZONE>"
 
-** Tested on OpenShift 4.17.22
+    cd demo-setup
+    ansible-playbook playbooks/globex.yml -e ACTION=create -e "ocp4_workload_cloud_architecture_workshop_mobile_gateway_url=[https://globex-mobile.globex](https://globex-mobile.globex/).<ROUTE53_HOSTED_ZONE>"
+    
+   
+> Tested on OpenShift 4.17.22
 
 ## RHCL Console
 ![](./docs/ocp-rhcl.png "RHCL Console")
