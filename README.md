@@ -14,6 +14,9 @@ ansible-playbook playbooks/globex.yml -e ACTION=create -e "ocp4_workload_cloud_a
 
 ** Tested on OpenShift 4.17.22
 
+## RHCL Console
+![](./docs/ocp-rhcl.png "RHCL Console")
+
 ## Dashboards
 https://grafana-route-monitoring.<OPENSHIFT_APPS_WILDCARD>/login
 
