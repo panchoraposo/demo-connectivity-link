@@ -1,0 +1,34 @@
+kind: HTTPRoute
+apiVersion: gateway.networking.k8s.io/v1beta1
+metadata:
+  name: globex-mobile-gateway
+  namespace: globex-apim-user1
+  labels:
+    deployment: globex-mobile-gateway
+    service: globex-mobile-gateway
+spec:
+  parentRefs:
+    - kind: Gateway
+      namespace: ingress-gateway
+      name: prod-web
+  hostnames:
+    - globex-mobile.globex.demorhcl.com
+  rules:
+    - matches:
+        - path:
+            type: PathPrefix
+            value: "/mobile/services/product/category/"
+          method: GET
+      backendRefs:
+        - name: globex-mobile-gateway
+          namespace: globex-apim-user1
+          port: 8080
+    - matches:
+        - path:
+            type: Exact
+            value: "/mobile/services/category/list"
+          method: GET
+      backendRefs:
+        - name: globex-mobile-gateway
+          namespace: globex-apim-user1
+          port: 8080

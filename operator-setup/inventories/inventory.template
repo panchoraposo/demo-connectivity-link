@@ -1,0 +1,19 @@
+[all:vars]
+
+ocp4_workload_connectivity_link_aws_access_key=<AWS_ACCESS_KEY>
+ocp4_workload_connectivity_link_aws_secret_access_key=<AWS_ACCESS_SECRET_KEY>
+
+# E.g.: sandbox902.opentlc.com
+ocp4_workload_connectivity_link_main_domain=<MAIN_DOMAIN>
+
+#don't change unless mandatory
+ocp4_workload_connectivity_link_sub_domain_name=globex
+
+# E.g.: This is the region where you have OpenShift running. (example us-east-2)
+ocp4_workload_connectivity_link_aws_managed_zone_region=<AWS_REGION>
+
+#your email address
+ocp4_workload_connectivity_link_ingress_gateway_tls_issuer_email=<ISSUER_EMAIL>
+
+#E.g. EU/US
+ocp4_workload_connectivity_link_gateway_geo_code=US
