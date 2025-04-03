@@ -18,12 +18,12 @@ ansible-playbook playbooks/globex.yml -e ACTION=create -e "ocp4_workload_cloud_a
 https://grafana-route-monitoring.<OPENSHIFT_APPS_WILDCARD>/login
 
 ### Developer
-![](/demo-connectivity-link/docs/grafana-developer.png "Developer Dashboard")
+![](./docs/grafana-developer.png "Developer Dashboard")
 
 ### Platform Engineer
-![](/demo-connectivity-link/docs/grafana-platform-engineer.png "Platform Engineer Dashboard")
+![](./docs/grafana-platform-engineer.png "Platform Engineer Dashboard")
 
-![](/demo-connectivity-link/docs/grafana-platform-engineer2.png "Platform Engineer Dashboard")
+![](./docs/grafana-platform-engineer2.png "Platform Engineer Dashboard")
 
 ### Business User
-![](/demo-connectivity-link/docs/grafana-business-user.png "Business User Dashboard")
+![](./docs/grafana-business-user.png "Business User Dashboard")
